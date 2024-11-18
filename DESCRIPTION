@@ -19,14 +19,15 @@ Imports:
     purrr,
     ggplot2,
     microbenchmark,
-    Rcpp
+    Rcpp,
+    httr,
+    jsonlite
 Suggests:
     testthat (>= 3.0.0),
     knitr,
     rmarkdown,
     shiny,
     dplyr,
-    httr,
     owmr,
     parallel,
     tidyr
