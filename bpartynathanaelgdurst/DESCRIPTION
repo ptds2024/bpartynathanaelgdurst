@@ -1,0 +1,36 @@
+Package: bpartynathanaelgdurst
+Title: Functions and Shiny Applications for Ice Cream Party Planning
+Version: 0.0.0.9000
+Authors@R: 
+    person("Nathanaël", "Dürst", email = "nathanael.durst@unil.ch", role = c("aut", "cre"))
+Description: 
+    This package provides a collection of functions and a Shiny application for simulating
+    and optimizing resource requirements for ice cream party planning. It includes 
+    implementations for calculating the radius, volume, and surface area of custom 
+    ice cream cones, as well as simulation tools for estimating resource needs based 
+    on weather and guest attendance. Designed for teaching, experimentation, and efficient 
+    simulation, it leverages Rcpp for high-performance computations and features 
+    a user-friendly interface.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    purrr,
+    ggplot2,
+    microbenchmark,
+    Rcpp
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown,
+    shiny,
+    dplyr,
+    httr,
+    owmr,
+    parallel,
+    tidyr
+LinkingTo: 
+    Rcpp
+Depends: 
+    R (>= 4.1.0)
