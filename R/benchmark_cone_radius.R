@@ -70,7 +70,7 @@ benchmark_cone_radius <- function(
 
   # Generate plot if requested
   if (plot) {
-    ggplot2::ggplot(results, ggplot2::aes(x = expr, y = time / 1000, fill = expr)) +  # Convert to microseconds
+    p <- ggplot2::ggplot(results, ggplot2::aes(x = expr, y = time / 1000, fill = expr)) +  # Convert to microseconds
       ggplot2::geom_boxplot(outlier.shape = NA, alpha = 0.7) +  # Set transparency for boxplots
       ggplot2::geom_jitter(width = 0.2, size = 1, alpha = 0.5) +  # Add jittered points for data spread
       ggplot2::scale_y_log10(breaks = c(10, 30, 100, 300, 1000, 3000, 10000)) +  # Set custom log scale breaks
@@ -82,6 +82,8 @@ benchmark_cone_radius <- function(
       ) +
       ggplot2::theme_minimal(base_size = 14) +  # Increase base font size for readability
       ggplot2::theme(legend.position = "none")  # Remove legend as colors indicate methods
+
+    print(p)  # Explicitly print the ggplot object
   }
 
   # Always print the benchmark results
