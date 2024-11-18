@@ -14,6 +14,11 @@
 
 
 cone_surface <- function(lower = 0, upper = 10, epsilon = 1e-3) {
+  # Input validation
+  if (!is.numeric(lower) || !is.numeric(upper) || !is.numeric(epsilon)) {
+    stop("All inputs (lower, upper, epsilon) must be numeric.")
+  }
+
   # Function for h(x) * sqrt(1 + (dh/dx)^2) for integration
   surface_area_integrand <- function(x) {
     h_x <- cone_radius_cpp(x)
