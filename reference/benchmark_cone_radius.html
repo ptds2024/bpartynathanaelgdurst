@@ -81,11 +81,11 @@ benchmarks all implementations on a sequence of 1000 values over 100 iterations.
 <span class="r-in"><span><span class="fu">benchmark_cone_radius</span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Unit: microseconds</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>               expr     min       lq      mean   median      uq      max neval</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>           For_Loop  98.384 100.5530 102.56037 101.7150 104.250  120.996   100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          Purrr_Map 630.167 646.6975 734.94870 665.7185 874.418  948.241   100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>              Apply 607.374 617.7385 732.83678 634.6105 857.527 3624.860   100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  Direct_Vectorized  38.802  42.1035  61.37021  45.2850  88.019  100.448   100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>               Rcpp   7.965   9.4825  12.41611  10.9450  13.114   70.883   100</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>           For_Loop  97.021  98.7740 101.36031 100.2670 102.672  126.857   100</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          Purrr_Map 627.510 646.7010 736.03521 665.0755 877.726  954.130   100</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>              Apply 607.914 616.8500 734.10686 637.6145 856.182 3803.203   100</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Direct_Vectorized  38.341  42.4595  61.75071  45.8105  88.781  109.755   100</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>               Rcpp   8.115   9.4475  12.24494  10.4750  13.014   73.146   100</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Custom benchmark</span></span></span>
 <span class="r-in"><span><span class="fu">benchmark_cone_radius</span><span class="op">(</span></span></span>
@@ -100,8 +100,8 @@ benchmarks all implementations on a sequence of 1000 values over 100 iterations.
 <span class="r-plt img"><img src="benchmark_cone_radius-1.png" alt="" width="700" height="433"></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Unit: microseconds</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      expr    min     lq     mean  median     uq     max neval</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  For_Loop 49.332 50.014 56.72058 50.4240 51.346 261.759    50</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      Rcpp  5.390  5.561  6.22304  5.6955  5.881  25.207    50</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  For_Loop 49.402 49.984 54.75128 50.6845 52.048 220.752    50</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      Rcpp  5.591  5.730  6.43952  5.8960  6.182  24.907    50</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
